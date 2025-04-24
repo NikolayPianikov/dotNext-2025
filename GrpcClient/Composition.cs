@@ -8,6 +8,6 @@ internal partial class Composition
     private void Setup() => DI.Setup()
         .Root<Program>(nameof(Root))
 
-        // .Bind<ChannelBase>().As(Singleton).To(_ => GrpcChannel.ForAddress("http://localhost:5000"))
+        .Bind<ChannelBase>().As(Singleton).To(_ => GrpcChannel.ForAddress("http://localhost:5000"))
         .Bind().To<ConsoleAdapter>();
 }
