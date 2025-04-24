@@ -1,0 +1,18 @@
+﻿@page "/"
+@using System.ComponentModel
+@using Clock
+@inject IAppViewModel App
+@inject IClockViewModel Clock
+
+<PageTitle>@App.Title</PageTitle>
+
+<p style="font-size:64px">@Clock.Date</p>
+<p style="font-size:128px">@Clock.Time</p>
+
+@code {
+    protected override void OnInitialized()
+    {
+        ((INotifyPropertyChanged)Clock).PropertyChanged += (_, _) => InvokeAsync(StateHasChanged);
+        base.OnInitialized();
+    }
+}
