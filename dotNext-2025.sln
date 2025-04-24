@@ -1,10 +1,52 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clock", "Clock\Clock.csproj", "{769218A6-F5C7-4BA7-B47A-542B7E342018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{A1D8F2A3-43DA-46D2-A1D5-4EE763588B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNetCore", "WpfAppNetCore\WpfAppNetCore.csproj", "{DDD79EEE-CE04-4C14-BEDE-85383D4C9B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{D0B206BF-4C72-45C2-AB8E-2CD6C0D9F743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{55D2F8B7-2978-4270-BAED-834E728B5D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clock.Tests", "Clock.Tests\Clock.Tests.csproj", "{9CD5D8FC-E57A-46FC-B890-F5995018DA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssemblyApp", "BlazorWebAssemblyApp\BlazorWebAssemblyApp.csproj", "{DBFC2D78-7178-4C17-BFB7-208717E30998}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{769218A6-F5C7-4BA7-B47A-542B7E342018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769218A6-F5C7-4BA7-B47A-542B7E342018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769218A6-F5C7-4BA7-B47A-542B7E342018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769218A6-F5C7-4BA7-B47A-542B7E342018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D8F2A3-43DA-46D2-A1D5-4EE763588B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D8F2A3-43DA-46D2-A1D5-4EE763588B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D8F2A3-43DA-46D2-A1D5-4EE763588B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D8F2A3-43DA-46D2-A1D5-4EE763588B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD79EEE-CE04-4C14-BEDE-85383D4C9B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD79EEE-CE04-4C14-BEDE-85383D4C9B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD79EEE-CE04-4C14-BEDE-85383D4C9B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD79EEE-CE04-4C14-BEDE-85383D4C9B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B206BF-4C72-45C2-AB8E-2CD6C0D9F743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B206BF-4C72-45C2-AB8E-2CD6C0D9F743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B206BF-4C72-45C2-AB8E-2CD6C0D9F743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B206BF-4C72-45C2-AB8E-2CD6C0D9F743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D2F8B7-2978-4270-BAED-834E728B5D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D2F8B7-2978-4270-BAED-834E728B5D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D2F8B7-2978-4270-BAED-834E728B5D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D2F8B7-2978-4270-BAED-834E728B5D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD5D8FC-E57A-46FC-B890-F5995018DA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD5D8FC-E57A-46FC-B890-F5995018DA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD5D8FC-E57A-46FC-B890-F5995018DA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD5D8FC-E57A-46FC-B890-F5995018DA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBFC2D78-7178-4C17-BFB7-208717E30998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFC2D78-7178-4C17-BFB7-208717E30998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFC2D78-7178-4C17-BFB7-208717E30998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFC2D78-7178-4C17-BFB7-208717E30998}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
