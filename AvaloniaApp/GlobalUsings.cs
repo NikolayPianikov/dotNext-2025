@@ -1,0 +1,10 @@
+﻿global using System;
+global using System.Diagnostics;
+global using Avalonia;
+global using Avalonia.Controls;
+global using Avalonia.Controls.ApplicationLifetimes;
+global using Avalonia.Markup.Xaml;
+global using Clock;
+global using Pure.DI;
+global using static Pure.DI.Lifetime;
+global using static Pure.DI.RootKinds;

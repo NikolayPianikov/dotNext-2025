@@ -1,0 +1,10 @@
+<Project>
+
+    <PropertyGroup>
+        <PureDI-version>2.1.69</PureDI-version>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+</Project>
+
