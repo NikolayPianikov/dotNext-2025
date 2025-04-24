@@ -1,3 +1,7 @@
 ﻿.idea
 **/obj
 **/bin
+UnityApp/Library
+UnityApp/UserSettings
+UnityApp/Temp
+UnityApp/Logs
