@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="AvaloniaApp.App"
+             xmlns:app="using:AvaloniaApp"
+             RequestedThemeVariant="Default">
+
+    <!-- "Default" ThemeVariant follows system theme variant.
+    "Dark" or "Light" are other available options. -->
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+
+    <Application.Resources>
+        <!--Creates a shared resource of type Composition and with key "Composition",
+        which will be further used as a data context in the views.-->
+        <app:Composition x:Key="Composition"  />
+    </Application.Resources>
+
+</Application>
