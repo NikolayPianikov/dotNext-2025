@@ -1,0 +1,10 @@
+﻿global using System.Threading.Tasks;
+global using Clock;
+global using Grpc.Core;
+global using GrpcService;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging;
+global using Pure.DI;
+global using Pure.DI.MS;
+global using static Pure.DI.Lifetime;
