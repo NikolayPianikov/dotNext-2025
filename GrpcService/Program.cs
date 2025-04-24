@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddGrpc();
 
-var composition = new Composition();
+using var composition = new Composition();
 
 // Uses Composition as an alternative IServiceProviderFactory
 builder.Host.UseServiceProviderFactory(composition);
