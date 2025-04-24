@@ -6,8 +6,10 @@ internal partial class Composition
     private void Setup() => DI.Setup()
         .Hint(Hint.Resolve, "Off")
 
-        .Root<IAppViewModel>(nameof(App))
-        .Root<IClockViewModel>(nameof(Clock))
+        .Root<IAppViewModel>(nameof(App), kind: Virtual)
+        .Root<IClockViewModel>(nameof(Clock), kind: Virtual)
+
+        .OrdinalAttribute<InitializableAttribute>()
 
         .Bind().As(Singleton).To<ClockViewModel>()
         .Bind().To<ClockModel>()
