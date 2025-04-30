@@ -12,6 +12,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Pure.DI" Version="$(PureDI-version)">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <ProjectReference Include="..\Clock\Clock.csproj"/>
     </ItemGroup>
 
