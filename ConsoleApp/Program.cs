@@ -1,4 +1,7 @@
-﻿return;
+﻿using var composition = new Composition();
+var root = composition.Root;
+
+root.Run();
 
 internal partial class Program(
     ITicks ticks,
