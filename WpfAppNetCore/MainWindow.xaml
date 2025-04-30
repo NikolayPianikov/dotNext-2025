@@ -5,6 +5,7 @@
         xmlns:app="clr-namespace:WpfAppNetCore"
         mc:Ignorable="d"
         DataContext="{StaticResource Composition}"
+        d:DataContext="{d:DesignInstance app:DesignTimeComposition}"
         Title="{Binding App.Title}"
         FontFamily="Consolas"
         FontWeight="Bold">
