@@ -7,6 +7,9 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         var composition = new Composition();
         
+        // Uses Composition as an alternative IServiceProviderFactory
+        builder.ConfigureContainer(composition);
+        
         builder
             .UseMauiApp(_ => new App
             {
@@ -18,11 +21,11 @@ public static class MauiProgram
                 // Handles disposables
 #if WINDOWS
                 events.AddWindows(windows => windows
-                    .OnClosed((_, _) => { }));
+                    .OnClosed((_, _) => composition.Dispose()));
 #endif
 #if ANDROID
                 events.AddAndroid(android => android
-                    .OnStop(_ => { }));
+                    .OnStop(_ => composition.Dispose()));
 #endif
             })
             .ConfigureFonts(fonts =>

@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mauiApp="using:MAUIApp"
              x:Class="MAUIApp.MainPage"
+             BindingContext="{StaticResource Composition}"
              x:DataType="mauiApp:Composition">
 
     <ScrollView>
@@ -13,11 +14,13 @@
             VerticalOptions="Center">
 
             <Label
+                Text="{Binding Clock.Date}"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="64"
                 HorizontalOptions="Center" />
 
             <Label
+                Text="{Binding Clock.Time}"
                 SemanticProperties.HeadingLevel="Level2"
                 FontSize="128"
                 HorizontalOptions="Center" />
