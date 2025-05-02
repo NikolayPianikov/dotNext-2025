@@ -3,6 +3,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddControllersAsServices();
 
+using var composition = new Composition();
+
+// Uses Composition as an alternative IServiceProviderFactory
+builder.Host.UseServiceProviderFactory(composition);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
