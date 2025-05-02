@@ -8,12 +8,21 @@ builder.Host.UseServiceProviderFactory(composition);
 
 var app = builder.Build();
 
-internal partial class Program()
+// Creates an application composition root of type `Owned<Program>`
+using var root = composition.Root;
+root.Value.Run(app);
+
+internal partial class Program(
+    IClockViewModel clock,
+    IAppViewModel appModel)
 {
     private void Run(WebApplication app)
     {
-        app.MapGet("/", () => {
-            return new ClockResult("Title", "Date", "Time");
+        app.MapGet("/", (
+            // Dependencies can be injected here as well
+            [FromServices] ILogger<Program> logger) => {
+            logger.LogInformation("Start of request execution");
+            return new ClockResult(appModel.Title, clock.Date, clock.Time);
         });
 
         app.Run();
